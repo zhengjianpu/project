@@ -1,0 +1,139 @@
+<!doctype html>
+<html><!-- InstanceBegin template="/Templates/page.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+<meta charset="utf-8">
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>homepage</title>
+<!-- InstanceEndEditable -->
+<link rel="stylesheet" type="text/css" href="css/homepage.css"/>
+<link rel=stylesheet type=text/css href="css/lrtk.css">
+<script type=text/javascript src="js/jquery.min.js"></script>
+<!-- InstanceBeginEditable name="head" -->
+<!-- InstanceEndEditable -->
+</head>
+
+<body>
+<form action = "search.php" method="POST" >
+<div id="Container">
+	<div id="Header">
+		<div id="logo"></div>
+        <div id="search">
+       	  <div id="search_loc">
+			<input type="text" name="search_text" class="search_text">
+            <input type="submit" name="search_buttom" value="Search" class="search_btn">
+        	</div>
+        </div>
+        <div id="login">
+        <a class="compt" href="login.html">MON COMPTE</a>
+        <a href="panier.html" style="position:relative;top:20px;left:0px;"><img src="images/panier.png" ></a>
+        </div>
+        
+    </div>
+    <div id="leftside">
+    <div id="firstpane" class="menu_list">
+    	<p class="menu_head current">High-Tech et Informatique</p>
+    	<div style="display:block" class="menu_body" >
+            <a href="#">High-Tech</a>
+            <a href="#">Informatique et bureau</a>
+        </div>
+    	<p class="menu_head">Jouets, Enfants et Bébés</p>
+    	<div style="display:none" class="menu_body" >
+            <a href="#">Jeux et Jouets</a>
+            <a href="#">Bébés & Puériculture</a>
+    	</div>
+    	<p class="menu_head">Maison et Bricolage</p>
+    	<div style="display:none" class="menu_body" >
+            <a href="#">Cuisine & Maison</a>
+            <a href="#">Bricolage & Jardin</a>
+            <a href="#">Animalerie</a>
+    	</div>
+    	<p class="menu_head">Beauté, Santé, Épicerie</p>
+    	<div style="display:none" class="menu_body" >
+            <a href="#">Beauté, Santé et Bien-être</a>
+            <a href="#">Épicerie et Boissons</a>
+    	</div>
+    	<p class="menu_head">Vêtements et Chaussures</p>
+    	<div style="display:none" class="menu_body" >
+            <a href="#">Vêtements</a>
+            <a href="#">Chaussures</a>
+            <a href="#">Accessoires</a>
+    	</div>
+            	<p class="menu_head">Sports et Loisirs</p>
+    	<div style="display:none" class="menu_body" >
+            <a href="#">Tous les Sports et Loisirs</a>
+    	</div>
+    </div>
+    <script type=text/javascript>
+	$(document).ready(function(){
+		$("#firstpane .menu_body:eq(0)").show();
+		$("#firstpane p.menu_head").click(function(){
+			$(this).addClass("current").next("div.menu_body").slideToggle(300).siblings("div.menu_body").slideUp("slow");
+			$(this).siblings().removeClass("current");
+		});
+		$("#secondpane .menu_body:eq(0)").show();
+		$("#secondpane p.menu_head").mouseover(function(){
+			$(this).addClass("current").next("div.menu_body").slideDown(500).siblings("div.menu_body").slideUp("slow");
+			$(this).siblings().removeClass("current");
+		});
+		
+	});
+	</script>
+    </div>
+    <div id="center">
+	<!-- InstanceBeginEditable name="EditRegion1" -->
+    <div class="p_title"><h2>Votre </h2></div>
+    <div class="list_head">
+    <table width="872" border="0">
+      <tbody>
+        <tr>
+          <td width="65%"></td>
+          <td width="15%" align="left">Prix</td>
+          <td width="10%" align="right">Quantité&nbsp;</td>
+		  <td width="10%" align="right"></td>
+        </tr>
+      </tbody>
+    </table>
+    </div>
+    <div class="list_body">
+    <table width="872" border="0" class="panier_table">
+  	<tbody>
+    <tr>
+      <td width="10%" valign="top"><img src="images/article1.jpg" width="100" height="100"/></td>
+      <td width="55%" valign="top">
+          	<table border="0">
+          	<tbody>
+            <tr>
+              <td>
+              <a style="text-decoration:none" href=""><span class="a-size-medium sc-product-title a-text-bold a-color-title">Chargeur sans Fil, JETech® Ultra Mince Chargeur Pad sans fil Chargeur à Induction pour Samsung S6/S6 Edge, Nexus 4/5/6/7 (2013) et Périphériques Tout Qi-Enabled</span></a>
+              </td>
+            </tr>
+            <tr>
+              <td>
+              <div class="p_delete">
+              <input class="buttom_delete" type="submit" name="submit.delete.panier" value="Supprimer">
+              </div>
+              </td>
+            </tr>
+          	</tbody>
+        	</table>
+		</td>
+      	<td width="15%" valign="top"><span class="a-size-medium a-color-price sc-white-space-nowrap a-text-bold">EUR 12,95</span></td>
+      	<td width="10%" valign="top" align="right"><input type="number" name="quantity" min="1" max="10" value="1"></td>
+		 <td width="10%" align="right"></td>
+    </tr>
+  	</tbody>
+	</table>
+	</div>
+    <div class="a-text-right a-float-right">
+    <span class="a-size-medium a-text-bold">
+      Sous-total (1 articles):
+      <span class="a-color-price a-text-bold a-size-medium">EUR 12,95</span>
+    </span>
+    </div>
+	<!-- InstanceEndEditable -->
+    </div>
+    <div class="Clear"></div>
+    <div id="Footer">Copyright © 2014-2015 abcd Inc. Tous droits réservés.</div>
+</div>
+</body>
+<!-- InstanceEnd --></html>
