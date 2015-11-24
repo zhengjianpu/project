@@ -118,7 +118,7 @@ include_once('Database.php');
 #include_once('Identification.php');
 #$sql = "Select * from search where title like '%$keyword%' limit 0,10";
 
- if (isset($_POST['search_text']) || isset($_GET['search_text'])||isset($_GET['search_text'])) {
+ if (isset($_POST['search_text']) || isset($_GET['search_text'])||isset($_GET['id_article'])) {
 	  $search;
 	  $id_article;
 	 if(isset($_POST['search_text'])){
