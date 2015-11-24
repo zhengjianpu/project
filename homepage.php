@@ -7,6 +7,8 @@
 <title>homepage</title>
 <link rel="stylesheet" type="text/css" href="css/homepage.css"/>
 <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+<script src="js/bootstrap.js"></script>
+<script src="jquery-1.11.2.min.js"></script>
 <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
 <!--[if lt IE 9]>
@@ -29,32 +31,17 @@
         	</div>
         </div>
         <div id="login">
-
-		
-
-		<div class="dropdown col-lg-6">
-            <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">
-			<a class="compt" href="decideCompte.php">
-			<?php 
-			session_start ();
-			if(isset($_SESSION['userName'])){
-			echo $_SESSION['userName'];
-			}
-			 else{
-			 echo 'Compte';
-			}
-			?>
-			</a>
-            <span class="caret"></span></button>
+        <div class="dropdown col-lg-6">
+            <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown"><a href="#">Zheng</a><span class="caret"></span></button>
             <ul class="dropdown-menu">
               <li><a href="#">Votre compte</a></li>
               <li><a href="#">Vos commandes</a></li>
               <li class="divider"></li>
-              <li><a href="exit.php">Déconnectez-vous</a></li>
+              <li><a href="#">Déconnectez-vous</a></li>
             </ul>
         </div>
 		<div class="image_panier_pos">
-        <a href="panier.php"><img src="images/panier.png" alt=""></a>
+        <a href="panier.html"><img src="images/panier.png" alt=""></a>
         </div>
         </div>
         
