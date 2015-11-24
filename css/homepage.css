@@ -1,12 +1,13 @@
 @charset "utf-8";
 /* CSS Document */
 html{
-	background: #FFFFFF;
+	background: #FFFFFF}
+a{
+	text-decoration : none;
 }
-a{text-decoration : none}
 body{
 	text-align:center;
-	
+	font-family: Arial,sans-serif;
 }
 #Container{
     width:1100px;
@@ -27,43 +28,62 @@ body{
 	background-image: url(../images/logo.png);
 }
 #search{
-	width: 700px;
+	width: 650px;
 	height: 80px;
 	float: left;
 }
 #search_loc {
-	width: 650px;
+	width: 600px;
 	height: 42px;
 	position: relative;
 	left: 25px;
 	top: 20px;
 }
 input.search_text {
-	width: 498px;
-	height: 38px;
+	width: 450px;
+	height: 40px;
 	border: 1px solid #A6A6A6;
 	float: left;
 }
 input.search_btn {
 	width: 150px;
-	height: 42px;
+	height: 40px;
 	border: 0px;
 	background: url(../images/search.png);
 	color: #FFF;
 	float: left;
 }
 #login{
-	width: 200px;
+	width: 250px;
 	height: 80px;
 	float: left;
+	line-height: 80px;
 }
 .compt{
-	position: relative;
-	left: -15px;
-	top: 15px;
 	color: #606060;
 	font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, sans-serif;
 }
+.image_panier_pos{
+	float: left;
+	width: 100px;
+}
+#admin_compt{
+	float:left;
+	vertical-align:middle;
+	line-height:80px;
+	color: #606060;
+	font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, sans-serif;
+}
+#admin_compt a:link, 
+#admin_compt a:visited { 
+color:#606060; 
+text-decoration:none; 
+} 
+#admin_compt a:hover, 
+#admin_compt a:active { 
+color:#000000; 
+text-decoration:underline; 
+} 
 #sidebar{
 	float: left;
 	width: 200px;
@@ -73,8 +93,7 @@ input.search_btn {
 	overflow: auto;
 	margin-top: 0px;
 	background-color: #FFFFFF;
-	text-align: center;
-     
+	text-align:left;
 }
 #affiche{
 	height: 400px;
@@ -111,8 +130,9 @@ input.search_btn {
 	font-family: Arial,sans-serif;
 }
 #leftside{
-	float:left;
-	width:223px;
+	float: left;
+	width: 223px;
+	text-decoration: none;
 }
 .list_head{
 	color: #555;
@@ -128,12 +148,7 @@ input.search_btn {
 	margin-left: 2px;
 	
 }
-.p_delete{
 
-	valign="bottom"
-	bottom: 0px
-	margin-top: 10px;
-	}
 .a-size-medium {
     font-size: 17px!important;
     line-height: 1.255!important;
@@ -173,4 +188,32 @@ input.search_btn {
 }
 .a-text-right {
     text-align: right!important;
+}
+
+.form_table{
+	width: 1100px;
+	float:left;
+}
+
+.form_table table{
+	width: 90%;
+	table-layout: fixed;
+	margin: 0 auto;
+	border-spacing: 10px 10px;
+}
+.form_table_td1{
+	width: 20%;
+	text-align:right;
+}
+.bt_submit{
+	float:left;
+	width:100%;
+	text-align:center;
+}
+
+.userinfo_body{
+	width: 100%;
+	height:auto;
+	float:left;
+	magrin:20px;
 }
